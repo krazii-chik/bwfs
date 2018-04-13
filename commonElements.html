@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Introduction to HTML</title>
+    </head>
+    <body>
+      <h1>Common Elements</h1>
+      <div>
+            <h2>Visible Content</h2>
+            <p>
+              All content added to HTML webpages should be between opening and closing tags, such as the <body> tag. A tag and the content between it is called an HTML element. There are many tags that we can use to organize and display text and other types of elements.
+            </p>
+          </div>
+          <div>
+                <h2>Headings</h2>
+                <p>
+                  Headings in HTML can be likened to headings in other types of media. For example, in newspapers, large headings are typically used to capture a reader's attention. Other times, headings are used to describe content, like the title of a movie or an educational article.
+                </p>
+                <p>
+                  HTML follows a similar pattern. In HTML, there are six different headings, or heading elements. Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.
+                </p>
+                <p>
+                  The following is the list of heading elements available in HTML. They are ordered from largest to smallest in size.
+                </p>
+                <ol>
+                  <li>h1 - used for main headings. All other smaller headings are used for subheadings.</li>
+                  <li>h2</li>
+                  <li>h3</li>
+                  <li>h4</li>
+                  <li>h5</li>
+                  <li>h6</li>
+                </ol>
+              </div>
+              <div>
+                <h2>Text Content Tags</h2>
+                  <p>
+                    Headings are meant to emphasize or enlarge only a few words.
+                  </p>
+                  <p>
+                    If you want to add blocks of text in HTML, you can use a paragraph, div, or span:
+                  </p>
+                  <ol>
+                    <li>Paragraphs [p] simply contain a block of plain text.</li>
+                    <li>[div]s can contain any text or other HTML elements. They are primarily used to divide HTML documents into sections.</li>
+                    <li>[span]s contain short pieces of text or other HTML. They are primarily used to wrap small pieces of content that are on the same line as other content and do not break text into different sections.</li>
+                    <li>In summary, the [div]s divided blocks of code, while the [span] divides inline text, or text that is on the same line as other text.</li>
+                    </ol>
+                  </div>
+                  <div>
+                    <h2>Text Style Tags</h2>
+                    <p>
+                      Tags provided by HTML exist to organize and describe the content of web pages. Two of these HTML tags are [em] and [strong]. They are used to signal that the text within them should be "emphasized" or "strong."
+                    </p>
+                    <p>
+                      Later, when you begin to style websites you will decide how you want browsers to display content within [em] and [strong] tags. However, browsers have built-in style sheets that will generally style these tags in this manner:
+                    </p>
+                    <ol>
+                      <li>The [em] tag will generally render as italic emphasis.</li>
+                      <li>The [strong] will generally render as bold emphasis.</li>
+                    </ol>
+                  </div>
+                  <div>
+                    <h2>Line Breaks</h2>
+                    <p>
+                      The spacing between code in an HTML file doesn't affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML's line break element: [br /].
+                    </p>
+                    <p>
+                      The line break element is a self-closing tag. You can use it anywhere within your HTML code and a line break will be shown in the browser. You may see line breaks written as [br /] or [br]. Both are valid break tags.
+                    </p>
+                    <p>
+                      Note: Line breaks are not the standard way of manipulating the position of HTML elements, but it's likely that you'll come across them every now and then.
+                    </p>
+                  </div>
+                  <div>
+                    <h2>Unordered Lists</h2>
+                    <p>
+                      In HTML, you can use an unordered list tag [ul] to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.
+                    </p>
+                    <p>
+                      The [ul] element cannot hold raw text and cannot automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the [li] tag. The [li] or list item tag is used to describe an item in a list.
+                    </p>
+                    
+  Ordered Lists
+Great job! Some lists, however, will require a bit more structure. HTML provides the ordered list for when you need the extra ordering that unordered lists don't provide.
+</p>
+Ordered lists are like unordered lists, except that each list item is numbered. You can create the ordered list with the <ol> tag and then add individual list items to the list using <li> tags.
+</p>
+  Images
+All of the elements you've learned about so far (headings, paragraphs, lists, and spans) share one thing in common: they're composed entirely of text! What if you want to add content to your web page that isn't composed of text, like images?
+</p>
+The <img> tag allows you to add an image to a web page. This is another example of a self-closing tag.
+</p>
+<img src="image-location.com" />
+The <img> tag has a required attribute called src. The src attribute must be set to the image's source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored. Note that the end of the <img> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly.
+</p>
+</p>
+
+Attributes provide more information about an element's content. They live directly inside of the opening tag of an element. Attributes are made up of the following two parts:
+</p>
+The name of the attribute
+The value of the attribute
+</p>
+Videos
+In addition to images, HTML also supports displaying videos. Like the <img> tag, the <video> tag requires a src attribute with a link to the video source. Unlike the <img> tag however, the <video> element requires an opening and a closing tag.
+</p>
+<video src="myVideo.mp4" width="320" height="240" controls>
+  Video not supported
+</video>
+In this example, the video source (src=) is "myVideo.mp4." The source must link to a video file, not to a video on another site. After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls: pause, play and skip. The text, Video not supported, between the opening and closing video tags will only be displayed if the browser is unable to load the video.
+</p>
+Linking Out
+You're off to a great start! So far you've learned how to add headings, paragraphs, lists, images, and videos to a web page. We wouldn't be taking advantage of the full power of HTML (and the Internet), however, if we didn't link to other web pages.
+</p>
+You can add links to a web page by adding an anchor element <a> and including the text of the link in between the opening and closing tags.
+</p>
+<a>This Is A Link To Wikipedia</a>
+Wait a minute! Technically, the link in the example above is incomplete. How exactly is the link above supposed to work if there is no URL that will lead users to the actual Wikipedia page?
+</p>
+The anchor element in the example above is incomplete without the href attribute. This attribute stands for hyperlink reference and is used to link to a file path, or the address to where a file is located (whether it is on your computer or another location).
+</p>
+<a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
+In the example above, the href attribute has been set to the value of the URL https://www.wikipedia.org/. The example now shows the correct use of an anchor element.
+</p>
+Note: When reading technical documentation, you may come across the term hyperlink. Not to worry, this is simply the technical term for link. These terms are often used interchangeably.
+New Page
+</p>
+Have you ever clicked on a link and observed the resulting web page open in a new browser window? If so, you can thank the <a> element's target attribute.
+
+The target attribute specifies that a link should open in a new window. Why is it beneficial to open links in a new window?
+
+It's possible that one or more links on your web page link to an entirely different website. In that case, you may want users to read the linked website, but hope that they return to your web page. This is exactly when the target attribute is useful!
+
+For a link to open in a new window, the target attribute requires a value of _blank. The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute.
+
+<a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">The Brown Bear</a>
+In the example above, setting the target attribute to "_blank" instructs the browser to open the relevant Wikipedia page in a new window.
+
+Note: In this exercise, we've used the terminology "open in a new window." It's highly likely that you are using a modern browser that opens up websites in new tabs, rather than new windows. Before the advent of browsers with tabs, additional browser windows had to be opened to view more websites. The target attribute, when used in modern browsers, will open new websites in a new tab.
+
+Relative
+Thus far you have learned how to link to external web pages. Many sites also link to internal web pages like Home, About, and Contact.
+
+Before we learn how to link between internal pages, let's establish where our files are stored. When making multi-page static websites, web developers often store HTML files in the root directory, or a main folder where all the files for the project are stored. As the size of the projects you create grows, you may use additional folders within the main project folder to organize your code.
+
+about.html
+contact.html
+index.html
+The example above shows three different files — about.html, contact.html, and index.html in one folder.
+
+If the browser is currently displaying index.html, it knows that about.html and contact.html are in the same folder as index.html, also referred to as the current folder. Since the browser knows the current folder, other files in the folder can be linked using a relative path.
+
+A relative path is a filename that shows the path to a local file (a file on the same website, such as ./index.html) versus an absolute path (a full url, like www.codecademy.com/learn/ruby which is stored in a different folder). The ./ in ./index.html tells the browser to look for the file in the current folder.
+
+<a href="./contact.html">Contact</a>
+In this example, the <a> tag is used with a relative path to link from the current HTML file to the contact.html file in the same folder. On the web page, Contact will appear as a link.
+
+  Same Page
+At this point, we have all the content we want on our page. Since we have so much content, it doesn't all fit on the screen. How do we make it easier for a user to jump to different portions of our page?
+
+When users visit our site, we want them to be able to click a link and have the page automatically scroll to a specific section.
+
+In order to link to a target on the same page, we must give the target an id, like this:
+
+<p id="top"> This is the top of the page! </p>
+<h1 id="bottom">This is the bottom! </h1>
+In this example, the <p> element contains id of top and the <h1> element contains id of bottom. An id can be added to most elements on a webpage.
+
+An id should be descriptive to make it easier to remember the purpose of a link. The target link is a string containing the # character and the target element's id.
+
+<ol>
+  <li><a href="#top">Top</a></li>
+  <li><a href="#bottom">Bottom</a></li>
+</ol>
+In the example above, the links to <p id="top"> and <h1 id="bottom"> are embedded in an ordered list. These links appear in the browser as a numbered list of links. This is why we have been adding ids to our divs all along!
+
+  Navigation
+In the previous two exercises, you added numerous links to your page that allow a user to navigate content on the same page, to other pages on the same website, or to external websites.
+
+Linking to elements on the same page or to other pages on the same site is called navigation. HTML has a special tag called <nav> that is used to wrap these links in order to organize the content on your web page.
+
+Some of the tags we have used, such as <div>, are called non-semantic tags. This means that they do not describe the content that is inside of them. However, many tags are used to describe the content that they surround, which helps us modify and style our content later. These are called semantic tags and <nav> is one of them!
+
+  HTML Tags
+While some tags have a very specific purpose, such as image and video tags, most tags are used to describe the content that they surround, which helps us modify and style our content later. There are seemingly infinite numbers of tags to use (many more than we've taught). Knowing when to use each one is based on how you want to describe the content of your HTML. Descriptive, well-chosen tags are one key to high-quality web development. A full list of available HTML tags can be found here.
+
+You now know all of the basic elements you need to structure an HTML page and add different types of content. Very soon you’ll be creating beautiful websites!
+
+Let’s review what you’ve learned in this lesson:
+
+Headings and sub-headings, <h1> to <h6> tags, are used to enlarge text.
+<p>, <span> and <div> tags specify text or blocks.
+The <em> and <strong> tags are used to emphasize text.
+Line breaks are created with the <br> tag.
+Ordered lists (<ol>) are numbered and unordered lists (<ul>) are bulleted.
+Images (<img>) and videos (<video>) can be added by linking to an existing source.
+Anchor tags (<a>) are used to link to internal pages, external pages or content on the same page.
+You can create sections on a webpage and jump to them using <a> tags and adding ids to the elements you wish to jump to.
+The nav element contains links to internal pages or content.
+
+      </p>
+      <footer>
+        <p>Copyright (C) All rights reserved. SJP 2018</p>
+      </footer>
+    </body>
+  </html><!-- closing tag: anything between the opening <html> and closing </html> tags will be interpreted as HTML code. Without these tags, it's possible that browsers could incorrectly interpret your HTML code. -->
